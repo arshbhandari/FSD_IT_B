@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABES EC Ghaziabad</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    .header {
+      height: 200px;
+      background-color: #1976d2;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .navbar {
+      background-color: #333;
+      padding: 10px 0;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .navbar li {
+      margin: 0 15px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #ff9800;
+      text-decoration: underline;
+    }
+
+    .box {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .box-header {
+      text-align: center;
+      padding: 20px;
+      background-color: #f7f7f7;
+      border-bottom: 1px solid #ccc;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .box-content {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .left {
+      flex: 1;
+      max-width: 30%;
+      background-color: #e0f7fa;
+      padding: 15px;
+      border-radius: 5px;
+      min-height: 500px;
+    }
+
+    .right {
+      flex: 2;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      min-height: 500px;
+      border: 1px solid #ccc;
+    }
+
+    iframe {
+      width: 100%;
+      height: 900px;   /* Adjusted height so no scrollbar */
+      border: none;
+      overflow: hidden; /* Hide scrollbars */
+    }
+
+    .box-footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #f7f7f7;
+      border-top: 1px solid #ccc;
+      border-radius: 0 0 5px 5px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    Welcome to ABES Engineering College Ghaziabad
+  </div>
+  
+  <!-- Navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="register.html">Register Here</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="changePassword.html">Change Password</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  
+  <!-- Box -->
+  <div class="box">
+    <div class="box-header">
+      <h2>ABES Engineering College Ghaziabad</h2>
+    </div>
+
+    <div class="box-content">
+      <!-- Left Section -->
+      <div class="left">
+        <h3>Left Section</h3>
+        <p>This is the left section (30%).</p>
+      </div>
+      
+      <!-- Right Section (iframe showing Registerhere.html without scrollbars) -->
+      <div class="right">
+        <h3>Register Here</h3>
+        <iframe src="register.html" scrolling="no"></iframe>
+      </div>
+    </div>
+
+    <div class="box-footer">
+      <h3>Box Footer</h3>
+      <p>This box is styled using CSS.</p>
+    </div>
+  </div>
+</body>
+</html>

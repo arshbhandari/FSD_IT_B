@@ -1,0 +1,16 @@
+.card {
+  text-align: center;
+  background-color: #00f;
+  border: 3px solid red;
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+  margin: auto;
+  padding: 20px;
+}
+
+.booklist {
+  justify-content: space-around;
+  display: flex;
+}
+/*# sourceMappingURL=React-NPM-App.aa436662.css.map */
