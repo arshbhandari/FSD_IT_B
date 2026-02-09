@@ -41,5 +41,38 @@ console.log(result);
 
 // Next Day --> Async fs = in this we use callback function.
 
+/*
 const fs=require('fs');
 fs.writeFile("./ad.txt","Code is ready",()=>{ });
+*/
+
+/*
+const fs=require('fs');
+fs.readFile("./ad.txt","utf-8",(err,result)=>{
+    if(err){
+        console.log("Error", err);
+    }
+    else{
+        console.log(result);  
+    }
+})
+*/
+
+const fs=require('fs');
+// fs.appendFileSync("./ad.txt"," and i have done it in my own way");
+
+// fs.appendFile("./ad.txt", " Done with callback ", ()=>{ });
+
+
+fs.writeFileSync("./a1.txt" , "Hello I'm Arsh Bhandari ");
+fs.writeFileSync("./b1.txt", "");
+
+// fs.cpSync("./a1.txt","./b1.txt");
+fs.cp("./a1.txt","./b1.txt",(err ,res)=>{
+    if(err){
+        console.log("file not copied");
+    }
+    else{
+        console.log("File Copied");
+    }
+});
