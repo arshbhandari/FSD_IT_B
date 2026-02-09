@@ -64,15 +64,16 @@ const fs=require('fs');
 // fs.appendFile("./ad.txt", " Done with callback ", ()=>{ });
 
 
-fs.writeFileSync("./a1.txt" , "Hello I'm Arsh Bhandari ");
-fs.writeFileSync("./b1.txt", "");
+// fs.writeFileSync("./a1.txt" , "Hello I'm Arsh Bhandari ");
+// fs.writeFileSync("./b1.txt", "");
 
-// fs.cpSync("./a1.txt","./b1.txt");
-fs.cp("./a1.txt","./b1.txt",(err ,res)=>{
-    if(err){
-        console.log("file not copied");
-    }
-    else{
-        console.log("File Copied");
-    }
-});
+// // fs.cpSync("./a1.txt","./b1.txt");
+// fs.cp("./a1.txt","./b1.txt",(err ,res)=>{
+//     if(err){
+//         console.log("file not copied");
+//     }
+//     else{
+//         console.log("File Copied");
+//     }
+// });
+fs.unlinkSync("./ad.txt"); // it has deleted the file.
