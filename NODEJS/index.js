@@ -76,4 +76,8 @@ const fs=require('fs');
 //         console.log("File Copied");
 //     }
 // });
-fs.unlinkSync("./ad.txt"); // it has deleted the file.
+
+// fs.unlinkSync("./ad.txt"); // it has deleted the file.
+
+// fs.renameSync("./a1.txt","./c1.txt");
+fs.renameSync("./c1.txt","./a1.txt");
