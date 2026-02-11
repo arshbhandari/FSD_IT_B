@@ -58,6 +58,7 @@ fs.readFile("./ad.txt","utf-8",(err,result)=>{
 })
 */
 
+const { log } = require('console');
 const fs=require('fs');
 // fs.appendFileSync("./ad.txt"," and i have done it in my own way");
 
@@ -80,4 +81,22 @@ const fs=require('fs');
 // fs.unlinkSync("./ad.txt"); // it has deleted the file.
 
 // fs.renameSync("./a1.txt","./c1.txt");
-fs.renameSync("./c1.txt","./a1.txt");
+// fs.renameSync("./c1.txt","./a1.txt");
+
+
+//------------Operating System---------------
+
+const os = require('os');
+// console.log("Platform",os.platform());
+// console.log("Userinfo",os.userInfo());
+// console.log("CPU",os.arch());
+
+// // if count = 10 it means gb, if count =8 it means mb
+// console.log("Free memory", os.freemem());
+// console.log("Total memory",os.totalmem());
+
+console.log("uptime",os.uptime()); // restarting time comes in seconds and chages every time u run.
+
+console.log("Home Directory",os.homedir());
+console.log("Host Name", os.hostname());
+
