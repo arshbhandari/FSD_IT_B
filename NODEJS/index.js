@@ -1,14 +1,24 @@
-// const http= require('http');
+const http= require('http');
+const fs = require('fs');
+const home =fs.readFileSync('abes.html');
 
-// const myserver = http.createServer((req, res)=>{
-//     // console.log('server1');
-//     // res.end('Hi , this is my first server');
-//     if(req.url =='/'){
-//     res.end(
-//     `<h1>Welcome to Abes Eng College</h1>
-//     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtmk1PHONqzC5xU2IbX-SA-zaKv7ND-69Dtg&s">
-//     `)
+const myserver = http.createServer((req, res)=>{
+    res.statusCode = 200;
+    // res.setHeader('content-type','text/plain');
+    res.end(home);
+    
+
+    
+    // console.log('server1');
+    // res.end('Hi , this is my first server');
+
+    // if(req.url =='/'){
+    // res.end(
+    // `<h1>Welcome to Abes Eng College</h1>
+    // <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtmk1PHONqzC5xU2IbX-SA-zaKv7ND-69Dtg&s">
+    // `)
 //     }
+
 //     else if(req.url =='/about'){
 //     res.end("We are student of ABES");
 //     }
@@ -21,9 +31,9 @@
 //     else {
 //     res.end("404 page not found");
 //     }
-// });
+});
 
-// myserver.listen(3000,()=>console.log('Server is run'));
+myserver.listen(3000,()=>console.log('Server is run'));
 
 /*when working on common JS we use REQUIRE
  while working on model JS we use IMPORT
@@ -58,8 +68,8 @@ fs.readFile("./ad.txt","utf-8",(err,result)=>{
 })
 */
 
-const { log } = require('console');
-const fs=require('fs');
+// const { log } = require('console');
+// const fs=require('fs');
 // fs.appendFileSync("./ad.txt"," and i have done it in my own way");
 
 // fs.appendFile("./ad.txt", " Done with callback ", ()=>{ });
@@ -95,8 +105,8 @@ const os = require('os');
 // console.log("Free memory", os.freemem());
 // console.log("Total memory",os.totalmem());
 
-console.log("uptime",os.uptime()); // restarting time comes in seconds and chages every time u run.
+// console.log("uptime",os.uptime()); // restarting time comes in seconds and chages every time u run.
 
-console.log("Home Directory",os.homedir());
-console.log("Host Name", os.hostname());
+// console.log("Home Directory",os.homedir());
+// console.log("Host Name", os.hostname());
 

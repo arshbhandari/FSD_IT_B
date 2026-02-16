@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo-img {
+  width: 50px;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
